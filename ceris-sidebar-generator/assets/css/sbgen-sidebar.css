@@ -1,0 +1,54 @@
+.sidebar-sbgen-custom{
+	position: relative;
+}
+.sidebar-sbgen-custom .sidebar-name {
+    padding-left: 30px;
+}
+.sbgen-delete-button{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    z-index: 100;
+    top: 14px;
+    font-size: 14px;
+    left: 10px;
+}
+
+.sbgen-delete-button:hover{
+	color: #ef3a2b;
+	cursor: pointer;
+}
+
+.activate_spinner{
+	display: block !important;
+	position: absolute;
+	top: 10px;
+	right: 4px;
+	background-color: #ECECEC;
+}
+
+.sbgen-add-widget{
+	background-color: #FCFCFC;
+	border: 1px solid #DFDFDF;
+	padding:10px;
+	margin: 12px 0px;
+}
+
+#wpwrap .sbgen-add-widget .button{
+	margin-top:15px;
+}
+
+.sbgen-add-widget .input_wrap { 
+	display: block;
+	position: relative;
+}
+
+.sbgen-add-widget .input_wrap input{ 
+	width: 100%;
+}
+
+.sbgen-field-description {
+    display: block;
+    font-style: italic;
+    margin-top: 5px;
+}
