@@ -2,7 +2,7 @@
 /*
 Plugin Name: Ceris Extension
 Plugin URI: 
-Description: The Next Mag extension (more functional, widgets, etc.)
+Description: Ceris Extension (more functional, widgets, etc.)
 Author: bkninja
 Version: 5.0
 Author URI: http://bk-ninja.com
