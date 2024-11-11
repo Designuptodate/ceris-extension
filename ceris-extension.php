@@ -4,7 +4,7 @@ Plugin Name: Ceris Extension
 Plugin URI: 
 Description: Ceris Extension (more functional, widgets, etc.)
 Author: bkninja
-Version: 5.0
+Version: 5.2
 Author URI: http://bk-ninja.com
 */
 if (!defined('CERIS_FUNCTIONS_PLUGIN_DIR')) {
