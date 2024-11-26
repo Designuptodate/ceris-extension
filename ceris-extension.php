@@ -142,7 +142,7 @@ if ( ! function_exists( 'ceris_extension_single_entry_interaction' ) ) {
 if ( ! function_exists( 'ceris_extension_single_share' ) ) {
     if (class_exists('ceris_core')) {
         $ceris_option = ceris_core::bk_get_global_var('ceris_option');
-        $share_box = $ceris_option['bk-sharebox-sw'];
+        $share_box = isset($ceris_option['bk-sharebox-sw']) ? $ceris_option['bk-sharebox-sw'] : 0;
         if ($share_box){
             function ceris_extension_single_share($postID) {
             ?>
