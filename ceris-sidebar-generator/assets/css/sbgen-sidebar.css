@@ -12,6 +12,14 @@
     top: 14px;
     font-size: 14px;
     left: 10px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+    font-size: 11px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 .sbgen-delete-button:hover{

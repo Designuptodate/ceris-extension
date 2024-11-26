@@ -21,7 +21,7 @@
 		},
 
 		add_del_button: function(){
-			this.widget_area.find('.sidebar-sbgen-custom').append('<span class="sbgen-delete-button"><i class="mdicon mdicon-close"></i></span>');
+			this.widget_area.find('.sidebar-sbgen-custom').append('<span class="sbgen-delete-button">X</span>');
 		},
 
 		bind_events: function(){

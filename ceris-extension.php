@@ -4,7 +4,7 @@ Plugin Name: Ceris Extension
 Plugin URI: 
 Description: Ceris Extension (more functional, widgets, etc.)
 Author: bkninja
-Version: 5.0
+Version: 5.1
 Author URI: http://bk-ninja.com
 */
 if (!defined('CERIS_FUNCTIONS_PLUGIN_DIR')) {
@@ -140,12 +140,18 @@ if ( ! function_exists( 'ceris_extension_single_entry_interaction' ) ) {
  * ceris_extension_single_share
  */
 if ( ! function_exists( 'ceris_extension_single_share' ) ) {
-	function ceris_extension_single_share($postID) {
-	   ?>
-		<ul class="list-unstyled list-horizontal">
-			<?php echo Ceris_Single::bk_entry_share($postID);?>
-		</ul>	
-    <?php
+    if (class_exists('ceris_core')) {
+        $ceris_option = ceris_core::bk_get_global_var('ceris_option');
+        $share_box = $ceris_option['bk-sharebox-sw'];
+        if ($share_box){
+            function ceris_extension_single_share($postID) {
+            ?>
+                <ul class="list-unstyled list-horizontal">
+                    <?php echo Ceris_Single::bk_entry_share($postID);?>
+                </ul>	
+            <?php
+            }
+        }
     }
 }
 

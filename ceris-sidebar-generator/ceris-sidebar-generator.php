@@ -20,7 +20,6 @@ if( ! class_exists('sbgenerator') ){
 		// load needed stuff on widget page
 		function init(){
 			$this->stored	= 'sbgen_sidebars';
-			$this->title = esc_html__('Sidebar Generator','the-next-mag');
 			add_action('load-widgets.php', array(&$this, 'load_assets') , 5 );
 			add_action('widgets_init', array(&$this, 'register_custom_sidebars') , 100 );
 			add_action('wp_ajax_sbgen_ajax_delete_custom_sidebar', array(&$this, 'delete_sidebar_area') , 100 );
@@ -42,7 +41,7 @@ if( ! class_exists('sbgenerator') ){
 
 			echo "\n<script type='text/html' id='sbgen-add-widget'>";
 			echo "\n  <form class='sbgen-add-widget' method='POST'>";
-			echo "\n  <h3>". esc_html($this->title) ."</h3>";
+			echo "\n  <h3>". esc_html__('Sidebar Generator','the-next-mag') ."</h3>";
 			echo "\n    <span class='input_wrap'><input type='text' value='' placeholder = '".esc_html__('Enter Name of the new Widget Area', 'the-next-mag')."' name='sbgen-add-widget' /></span>";
 			echo "\n    <input class='button' type='submit' value='".esc_html__('Add Widget Area', 'the-next-mag')."' />";
 			echo "\n    ".$nonce;
